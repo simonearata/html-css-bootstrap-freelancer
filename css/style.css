@@ -1,0 +1,76 @@
+.debug [class*="col-"]{
+  height: 130px;
+  background-color: salmon;
+}
+
+/* MENU FIXED  */
+.lg-color{
+  height: 80px;
+  background-color: #2c3e50;
+}
+
+.tx-up{
+  color: white;
+  text-transform: uppercase;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+/* HEADER */
+.header-color{
+  height: 400px;
+  background-color: #1abc9c;
+}
+
+img{
+  height: 200px;
+  margin-top: 20px;
+}
+
+header h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/* MAIN */
+main h3{
+  text-transform: uppercase;
+  font-weight: 550;
+  margin: 40px 0;
+}
+
+.main_portfolio{
+  background-color: white;
+  height: 130px;
+}
+
+.main_img img{
+  border-radius: 10px;
+}
+
+.main_text{
+  background-color: #1abc9c;
+  margin-top: 50px;
+  color: white;
+}
+
+.main_text p{
+  margin: 0 50px;
+}
+.btn-download{
+  background-color: #1abc9c;
+  border-radius: 5px solid white;
+  color: white;
+  margin: 20px 0;
+}
+
+/* FOOTER */
+footer h3{
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-weight: 550;
+  margin: 40px 0;
+}
