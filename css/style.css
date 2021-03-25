@@ -1,76 +1,220 @@
-.debug [class*="col-"]{
-  height: 130px;
-  background-color: salmon;
+/* global */
+
+.sc-wrapper-60{
+  width: 60%;
+  margin: 0 auto;
+}
+.sc-mb-20 {
+  margin-bottom: 20px;
+}
+.sc-inner-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+.sc-section-green {
+  background-color: #1ABC9C;
+  color: #fff;
 }
 
-/* MENU FIXED  */
-.lg-color{
-  height: 80px;
+.sc-btn-green {
+  background: #1ABC9C;
+  color: #fff;
+}
+.sc-btn-green:hover,
+.sc-btn-green:active,
+.sc-btn-green:focus {
+  background: #0f836c;
+  color: #fff;
+}
+.sc-btn-border-white {
+  border: 1px solid #fff;
+  color: white;
+}
+.sc-btn-border-white:hover, 
+.sc-btn-border-white:active, 
+.sc-btn-border-white:focus {
+  color: #2c3e50;
+  background-color: #fff;
+}
+
+
+/* typo */
+h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.sc-p {
+  font-size: 20px;
+}
+section {
+  padding: 60px 0;
+}
+
+/* header */
+.navbar.sc-navbar {
+  margin-bottom: 0;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 20px 0;
+}
+.navbar-default.sc-navbar .navbar-brand,
+.navbar-default.sc-navbar .navbar-nav li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar-default.sc-navbar .navbar-brand {
+  font-size: 26px;
+  font-weight: bold;
+}
+.navbar-default.sc-navbar .navbar-nav li a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-default.sc-navbar .navbar-nav li a:hover {
+  color: #1ABC9C;
+}
+
+
+.sc-jumbotron-image {
+  max-width: 250px;
+}
+
+#jumbotron{
+  margin-top: 90px;
+}
+
+/* star */
+.sc-star {
+  margin: 30px auto;
+
+}
+.sc-star:before,
+.sc-star:after {
+  content: '';
+  display: inline-block;
+  width: 15%;
+  height: 4px;
+  vertical-align: middle;
+  background-color: white;
+}
+.sc-star i.fa-star {
+  display: inline-block;
+  width: 8%;
+  font-size: 30px;
+  vertical-align: middle;
+}
+.sc-star.sc-star-blue:before,
+.sc-star.sc-star-blue:after {
   background-color: #2c3e50;
 }
-
-.tx-up{
-  color: white;
-  text-transform: uppercase;
-}
-
-.bold{
-  font-weight: bold;
-}
-
-/* HEADER */
-.header-color{
-  height: 400px;
-  background-color: #1abc9c;
-}
-
-img{
-  height: 200px;
-  margin-top: 20px;
-}
-
-header h1{
-  font-size: 30px;
-  font-weight: bold;
-}
-
-
-/* MAIN */
-main h3{
-  text-transform: uppercase;
-  font-weight: 550;
-  margin: 40px 0;
-}
-
-.main_portfolio{
-  background-color: white;
-  height: 130px;
-}
-
-.main_img img{
-  border-radius: 10px;
-}
-
-.main_text{
-  background-color: #1abc9c;
-  margin-top: 50px;
-  color: white;
-}
-
-.main_text p{
-  margin: 0 50px;
-}
-.btn-download{
-  background-color: #1abc9c;
-  border-radius: 5px solid white;
-  color: white;
-  margin: 20px 0;
-}
-
-/* FOOTER */
-footer h3{
+.sc-star.sc-star-blue i.fa-star {
   color: #2c3e50;
-  text-transform: uppercase;
-  font-weight: 550;
-  margin: 40px 0;
+}
+
+
+/* section portfolio */
+.sc-portfolio-item {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+.sc-portfolio-item-image {
+  width: 100%;
+}
+
+
+/* contact */
+#contact input,
+#contact textarea{
+  padding: 10px 0 30px 0;
+  border-top: 0 transparent;
+  border-left: 0 transparent;
+  border-right: 0 transparent;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 20px;
+  color: #2c3e50;
+}
+#contact ::placeholder {
+  color: #2c3e50;
+  font-size: 20px;
+}
+
+
+/* footer */
+
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+}
+.sc-footer-pre {
+  background-color:#3a546d;
+  padding: 40px 0;
+}
+.sc-footer-sub {
+  width: 100%;
+  padding: 40px;
+}
+.sc-footer-col .social i {
+  width: 55px;
+  padding: 15px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  font-size: 20px;
+}
+
+.sc-link-green {
+  color: #1ABC9C;
+  text-decoration: none;
+}
+.sc-link-green:hover {
+  color: #179980;
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+
+  section {
+    padding: 30px 0;
+  }
+  #about p {
+    margin-bottom: 30px;
+  }
+  .navbar-default.sc-navbar .navbar-brand {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  /* headings */
+  h1{
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+
+  .sc-footer-col {
+    margin-bottom: 30px;
+  }
+
 }
